@@ -140,7 +140,7 @@
     "variable": [
         {
             "key": "API_ENDPOINT",
-            "value": "http://localhost:8000",
+            "value": "http://localhost:9090",
             "type": "string"
         }
     ]
