@@ -2,7 +2,7 @@
 
 ## Nama: Rizky Haffiyan Roseno
 
-## Proyek: post-api
+## Project Test Post API
 
 ### Deskripsi
 API untuk mengelola postingan dan tag dengan menggunakan Go, Gin, GORM, dan PostgreSQL.
