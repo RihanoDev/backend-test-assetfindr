@@ -1,2 +1,3 @@
 # backend-test-assetfindr
-post-api
+- Nama: Rizky Haffiyan Roseno
+- post-api
