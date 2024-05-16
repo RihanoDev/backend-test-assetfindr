@@ -1,0 +1,147 @@
+{
+    "info": {
+        "_postman_id": "7d3ea296-1a7c-4b40-92ac-02d763ae81bf",
+        "name": "Hiring Assignment BE",
+        "schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+    },
+    "item": [
+        {
+            "name": "Get All Posts",
+            "request": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                    "raw": "{{API_ENDPOINT}}/api/posts",
+                    "host": [
+                        "{{API_ENDPOINT}}"
+                    ],
+                    "path": [
+                        "api",
+                        "posts"
+                    ]
+                }
+            },
+            "response": []
+        },
+        {
+            "name": "Get Post By Id",
+            "request": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                    "raw": "{{API_ENDPOINT}}/api/posts/1",
+                    "host": [
+                        "{{API_ENDPOINT}}"
+                    ],
+                    "path": [
+                        "api",
+                        "posts",
+                        "1"
+                    ]
+                }
+            },
+            "response": []
+        },
+        {
+            "name": "Add Post",
+            "request": {
+                "method": "POST",
+                "header": [],
+                "body": {
+                    "mode": "raw",
+                    "raw": "{\n \"title\": \"Lorem Ipsum Dolor Sit Amet\",\n \"content\": \"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.\",\n \"tags\": [\"Lorem\", \"Ipsum\"]\n}",
+                    "options": {
+                        "raw": {
+                            "language": "json"
+                        }
+                    }
+                },
+                "url": {
+                    "raw": "{{API_ENDPOINT}}/api/posts",
+                    "host": [
+                        "{{API_ENDPOINT}}"
+                    ],
+                    "path": [
+                        "api",
+                        "posts"
+                    ]
+                }
+            },
+            "response": []
+        },
+        {
+            "name": "Update Post",
+            "request": {
+                "method": "PUT",
+                "header": [],
+                "body": {
+                    "mode": "raw",
+                    "raw": "{\n \"title\": \"Updated Lorem Ipsum Dolor Sit Amet\",\n \"content\": \"Updated Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.\",\n \"tags\": [\"Lorem\", \"Ipsum\"]\n}",
+                    "options": {
+                        "raw": {
+                            "language": "json"
+                        }
+                    }
+                },
+                "url": {
+                    "raw": "{{API_ENDPOINT}}/api/posts/1",
+                    "host": [
+                        "{{API_ENDPOINT}}"
+                    ],
+                    "path": [
+                        "api",
+                        "posts",
+                        "1"
+                    ]
+                }
+            },
+            "response": []
+        },
+        {
+            "name": "Delete Post By Id",
+            "request": {
+                "method": "DELETE",
+                "header": [],
+                "url": {
+                    "raw": "{{API_ENDPOINT}}/api/posts/1",
+                    "host": [
+                        "{{API_ENDPOINT}}"
+                    ],
+                    "path": [
+                        "api",
+                        "posts",
+                        "1"
+                    ]
+                }
+            },
+            "response": []
+        }
+    ],
+    "event": [
+        {
+            "listen": "prerequest",
+            "script": {
+                "type": "text/javascript",
+                "exec": [
+                    ""
+                ]
+            }
+        },
+        {
+            "listen": "test",
+            "script": {
+                "type": "text/javascript",
+                "exec": [
+                    ""
+                ]
+            }
+        }
+    ],
+    "variable": [
+        {
+            "key": "API_ENDPOINT",
+            "value": "http://localhost:8000",
+            "type": "string"
+        }
+    ]
+}
