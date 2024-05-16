@@ -21,7 +21,7 @@ API untuk mengelola postingan dan tag dengan menggunakan Go, Gin, GORM, dan Post
     ```
 
 3. **Konfigurasi Environment**:
-    Buat file `.env` berdasarkan template berikut dan isi dengan konfigurasi Anda.
+    Buat file `.env` berdasarkan template berikut dan isi dengan konfigurasi yang dimiliki.
     ```
     DB_USERNAME=your_db_username
     DB_PASSWORD=your_db_password
@@ -31,9 +31,14 @@ API untuk mengelola postingan dan tag dengan menggunakan Go, Gin, GORM, dan Post
     ```
 
 4. **Setup Database**:
-    Pastikan database PostgreSQL Anda berjalan dan sesuai dengan konfigurasi di `.env`.
+    Pastikan database PostgreSQL berjalan dan sesuai dengan konfigurasi di `.env`.
 
 5. **Run the Application**:
     ```bash
     go run main.go
+    ```
+    atau dapat menggunakan
+   
+    ```bash
+    air
     ```
